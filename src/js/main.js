@@ -48,7 +48,7 @@ copyBtn.addEventListener("click", () => {
   const password = passwordOutput.value;
 
   if (!password) {
-    return;
+    return alert("You must generate a password first");
   }
 
   textarea.value = password;
@@ -70,7 +70,7 @@ const generatePassword = () => {
 
   const typesCount = hasUpper + hasLower + hasNumber + hasSymbol;
 
-  if (typesCount === 0) return "";
+  if (typesCount === 0) return alert("Select checkbox to continue");
 
   const arr = [{ hasUpper }, { hasLower }, { hasNumber }, { hasSymbol }].filter(
     (item) => Object.values(item)[0]
