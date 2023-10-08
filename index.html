@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <script
+      src="https://kit.fontawesome.com/a43aa655c9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles/styles.css" />
+  </head>
+  <body>
+    <div class="app__container">
+      <header class="header">
+        <h1 class="header__text">Password Generator</h1>
+      </header>
+      <main>
+        <section class="input">
+          <input class="input__text" type="text" />
+          <button class="input__btn">
+            <i class="fa-solid fa-clipboard"></i>
+          </button>
+        </section>
+        <section class="rules">
+          <div class="rules__items rules__password--length">
+            <h2>Password length</h2>
+            <input class="rules__password--length--input" type="number" />
+          </div>
+          <div class="rules__items rules__password--upper">
+            <h2>Include uppercase letters</h2>
+            <input
+              class="rules-chkbox rules__password--upper--input"
+              type="checkbox"
+            />
+          </div>
+          <div class="rules__items rules__password--lower">
+            <h2>Include lowercase letters</h2>
+            <input
+              class="rules-chkbox rules__password--lower--input"
+              type="checkbox"
+            />
+          </div>
+          <div class="rules__items rules__password--numbers">
+            <h2>Include numbers</h2>
+            <input
+              class="rules-chkbox rules__password--numbers--input"
+              type="checkbox"
+            />
+          </div>
+          <div class="rules__items rules__password--symbols">
+            <h2>Include Symbols</h2>
+            <input
+              class="rules-chkbox rules__password--symbols--input"
+              type="checkbox"
+            />
+          </div>
+        </section>
+        <button class="generate__pass--btn">Generate password</button>
+      </main>
+    </div>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
